@@ -1,0 +1,17 @@
+@media (max-width: 415px) {
+    body {
+        background-color: var(--dark-cyan);
+        background-image: url(../images/bg-pattern-bottom.svg),
+            url(../images/bg-pattern-top.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 170px 400px, -750px -400px;
+    }
+
+    .card {
+        width: 326px;
+    }
+
+    li:first-child {
+        margin-left: 41px;
+    }
+}

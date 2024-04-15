@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-bottom.svg),
+        url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 924px 475px, -53px -410px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #FFF;
+    height: 374px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 1px 41px 101px -15px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 1px 41px 101px -15px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 1px 41px 101px -15px rgba(0, 0, 0, 0.29);
+}
+
+.card .cover {
+    width: 100%;
+    height: 140px;
+    background: url(../images/bg-pattern-card.svg) center no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .cover img {
+    width: 100%;
+}
+
+.card .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -53px;
+    border-bottom: 0.5px rgba(150,150,150,0.2) solid;
+}
+
+.card .personal-info .avatar img {
+    border-radius: 50%;
+    border: #FFF solid 5px;
+    margin-bottom: 15px;
+}
+
+.card .personal-info .name {
+    margin: -1px 1px 7px;
+}
+
+.card .personal-info .age {
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.card .personal-info .city {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.card .align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+}
+
+.card .info-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card .info-profile .info {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.8px;
+}
+
+li:first-child {
+    margin-left: 48px;
+}
+
+li:nth-child(even) {
+    margin-left: -8px;
+}
+
+li:last-child {
+    margin-right: 54px;
+}
+
+.card .info-profile .info {
+    display: flex;
+    align-items: center;
+}
+
+.card .info-profile .info .counter {
+    margin-bottom: 5px;
+}
+
+.card .info-profile .info .type-no {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.card .personal-info .name,
+.card .info-profile .info {
+    font-weight: 700;
+}
+
+.card .personal-info .age,
+.card .info-profile .info .type-no,
+.card .personal-info .city {
+    color: var(--grayish-blue);
+}
+
+.card .personal-info .name, .card .info-profile .info .counter {
+    color: var(--very-dark-blue);
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    color: #FFF;
+}
+
+.attribution a {
+    color: var(--very-dark-blue);
+    transition: 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    color: var(--grayish-blue);
+}
